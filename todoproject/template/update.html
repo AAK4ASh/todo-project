@@ -1,0 +1,17 @@
+
+<div class='card'>
+    <div class='card-header'>
+    <div class='card-title'>
+        TAsk Update
+    </div>
+    <div class='card-body'>
+        <form method="POST"  enctype="multipart/form-data">
+            {% csrf_token %}
+            {{form.as_p}}
+            <button type="submit">Save</button>
+        </form>
+    </div>
+    </div>
+</div>
+
+
